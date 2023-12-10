@@ -1,6 +1,6 @@
+require("dotenv/config");
 import axios from "axios"
 
 export const api = axios.create({
-    //baseURL: "http://localhost:4444",
-    baseURL: "https://rocketmovies-api.sergiomello.online",
-})
+    baseURL: process.env.BASE_URL || "http://localhost:3334"
+});
