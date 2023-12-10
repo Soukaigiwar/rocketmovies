@@ -17,7 +17,7 @@ export function SignUp() {
     function handleSignUp() {
         if (!name || !email || !password) return alert("Preencha todos os campos!")
 
-        console.log(name, email);
+        console.log(process.env.REACT_APP_BASE_URL);
         api.post("/users", { name, email, password })
             .then(() => {
                 alert("Usuário cadastrado com sucesso.")
