@@ -52,7 +52,7 @@ export function NewMovie() {
     }
 
     async function handleNewMovie() {
-
+        console.log(title);
         await api.post("/movieNotes", {
             title,
             description,

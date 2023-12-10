@@ -1,5 +1,6 @@
 import axios from "axios"
 
 export const api = axios.create({
-    baseURL: "https://rocketnotes-api.sergiomello.online",
+    baseURL: "http://localhost:4444",
+    //baseURL: "https://rocketmovies-api.sergiomello.online",
 })

@@ -55,6 +55,7 @@ export function MovieDetails() {
         async function fetchMovie() {
             const response = await api.get(`/movienotes/${params.id}`);
             const tags = response.data.movieTags.map(tag => {
+                
                 return {
                     ...tag,
                     tag
